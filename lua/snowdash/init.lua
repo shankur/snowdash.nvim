@@ -75,6 +75,7 @@ end
 
 function M.setup(opts)
   config.setup(opts)
+  M._setup_done = true
   setup_highlights()
   vim.api.nvim_create_autocmd("ColorScheme", {
     group = augroup,
